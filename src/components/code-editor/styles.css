@@ -1,0 +1,52 @@
+.code-editor-container {
+  height: 400px;
+  position: relative;
+}
+
+#highlighting, #editing {
+
+  margin: 10px;
+  padding: 10px;
+  border: 0;
+  width: calc(100% - 32px);
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  overflow: auto;
+  white-space: nowrap; /* Allows textarea to scroll horizontally */
+  background: transparent;
+}
+
+#highlighting, #highlighting code{
+  color: #fff;
+}
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+  color: #E91E63;
+  background: transparent;
+}
+
+#editing, #highlighting code, #highlighting code * {
+  font-family: monospace!important;
+  font-size: 20px!important;
+  text-shadow: none;
+  line-height: 26px!important;
+}
+
+#editing {
+  z-index: 1;
+  resize: none;
+  color: transparent;
+  caret-color: white;
+  line-height: 28px!important;
+}
+
+#highlighting {
+  z-index: 0;
+}
+
+#editing, #highlighting, #highlighting * {
+  tab-size: 2;
+}
