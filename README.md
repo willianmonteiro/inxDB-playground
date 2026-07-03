@@ -25,14 +25,7 @@ npm install
 npm run dev
 ```
 
-The playground uses the InxDB source from a sibling checkout (`"inxdb": "file:../inxDB"`), so clone both repos next to each other and build the library first:
-
-```sh
-git clone https://github.com/willianmonteiro/inxDB
-git clone https://github.com/willianmonteiro/inxDB-playground
-cd inxDB && npm install && npm run build
-cd ../inxDB-playground && npm install && npm run dev
-```
+The playground uses the published [`inxdb`](https://www.npmjs.com/package/inxdb) package. To develop against a local checkout of the library instead, point the dependency at a sibling clone (`npm install ../inxDB`) and build it there first.
 
 ## Stack
 
