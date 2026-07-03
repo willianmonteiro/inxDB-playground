@@ -2,6 +2,8 @@
 
 An interactive playground for [InxDB](https://github.com/willianmonteiro/inxDB) — a promise-based IndexedDB wrapper with a document-store API.
 
+**Live version: https://willianmonteiro.github.io/inxDB-playground/**
+
 Write InxDB code in the editor, run it with `⌘⏎`/`Ctrl+Enter`, and watch it execute against a **real IndexedDB database** in your browser tab. Returned values and console output land in the console panel, and the database panel shows the live state of every collection and record.
 
 ![InxDB Playground](docs/screenshot.png)
