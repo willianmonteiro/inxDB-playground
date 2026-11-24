@@ -29,6 +29,8 @@ npm run dev
 
 The playground uses the published [`inxdb`](https://www.npmjs.com/package/inxdb) package. To develop against a local checkout of the library instead, point the dependency at a sibling clone (`npm install ../inxDB`) and build it there first.
 
+The playground is pinned to InxDB **2.0.1**, which preserves existing records when a replacement fails, retries concurrent schema upgrades, and handles blocked database operations safely. See the [library release notes](https://github.com/willianmonteiro/inxDB/releases/tag/v2.0.1).
+
 ## Stack
 
 - [Vite](https://vite.dev) + React + TypeScript
